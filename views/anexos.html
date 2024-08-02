@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela de Anexos</title>
+    <script src="../resources/script.js"></script>
+    <link rel="stylesheet" href="../estilo.css" />
+  </head>
+  <body><div>
+    <a href="index.html">Fornecedor</a>
+    <a href="produtos.html">produtos</a>
+  </div>
+    <form id="anexoForm">
+      <input type="file" id="anexoArquivo" />
+      <button type="button" onclick="addAnexo()">Adicionar Anexo</button>
+    </form>
+    <table id="anexosTable">
+      <thead>
+        <tr>
+          <th>Nome do Anexo</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Anexo1.pdf</td>
+          <td>
+            <a href="anexos/Anexo1.pdf" download
+              ><img src="eye-icon.png" alt="Download"
+            /></a>
+            <button onclick="deleteRow(this)">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Fornecedor</title>
+    <script src="../resources/script.js"></script>
+    <script src="../resources/buscacep.js" type="module" defer></script>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="produtos.html">Produto</a>
+      <a href="anexos.html">Anexos</a>
+    </div>
+    <div class="container mt-5">
+      <h2>Cadastro de Fornecedor</h2>
+      <form id="formCadastroFornecedor">
+        <div class="form-group">
+          <label for="razaoSocial">Razão Social</label>
+          <input type="text" class="form-control" id="razaoSocial" required />
+        </div>
+        <div class="form-group">
+          <label for="nomeFantasia">Nome Fantasia</label>
+          <input type="text" class="form-control" id="nomeFantasia" required />
+        </div>
+        <div class="form-group">
+          <label for="cnpj">CNPJ</label>
+          <input type="text" class="form-control" id="cnpj" required />
+        </div>
+        <div class="form-group">
+          <label for="inscricaoEstadual">Inscrição Estadual</label>
+          <input type="number" class="form-control" id="inscricaoEstadual" />
+        </div>
+        <div class="form-group">
+          <label for="inscricaoMunicipal">Inscrição Municipal</label>
+          <input type="number" class="form-control" id="inscricaoMunicipal" />
+        </div>
+        <div class="form-group">
+          <label for="contato">Nome da Pessoa de Contato</label>
+          <input type="text" class="form-control" id="contato" required />
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="number" class="form-control" id="telefone" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <h2>Localidade</h2>
+        <div class="inputbox">
+          <label for="cep">CEP</label>
+          <input type="text" class="form-control" id="cep" required />
+        </div>
+        <div class="inputbox">
+          <label for="endereco">Endereço</label>
+          <input type="text" class="form-control" id="endereco" required />
+        </div>
+        <div class="inputbox">
+          <label for="bairro">Bairro</label>
+          <input type="text" class="form-control" id="bairro" required />
+        </div>
+        <div class="inputbox">
+          <label for="municipio">Município</label>
+          <input type="text" class="form-control" id="municipio" required />
+        </div>
+        <div class="inputbox">
+          <label for="estado">Estado</label>
+          <input type="text" class="form-control" id="estado" required />
+        </div>
+        <div class="inputbox">
+          <label for="numero">Número</label>
+          <input type="number" class="form-control" id="numero" required />
+        </div>
+        <button type="submit" class="btn btn-success">Salvar Fornecedor</button>
+      </form>
+    </div>
+  </body>
+</html>
